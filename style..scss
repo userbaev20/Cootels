@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+%bttn {
+  width: 151px;
+  height: 51px;
+  background-color: #0e1734;
+  color: #fff;
+  border-radius: 4px;
+  @extend%df;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 16px, 32px;
+  font-family: var(--text-font2);
+}
+
+%h2 {
+  color: #192252;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+%df {
+  display: flex;
+  align-items: center;
+}
+
+%txt {
+  color: #848fac;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+:root {
+  --text-font: "Montserrat", sans-serif;
+}
+
+:root {
+  --text-font2: "Inter", sans-serif;
+}
+
+.container {
+  width: 1350px;
+  margin: 0 auto;
+}
+
+.header {
+  @extend%df;
+  justify-content: space-between;
+
+  &-logo {
+    font-family: var(--text-font);
+    margin-top: 50px;
+
+    p {
+      color: #192252;
+      font-size: 32px;
+      font-weight: 600;
+    }
+  }
+
+  &-links {
+    font-family: var(--text-font2);
+
+    ul {
+      @extend%df;
+      gap: 32px;
+      margin-top: 50px;
+    }
+
+    li {
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: #192252;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+
+    button {
+      @extend%bttn;
+      margin-top: 50px;
+      padding: 14px, 16px;
+    }
+  }
+
+
+  .nature {
+    justify-content: space-between;
+    @extend%df;
+    font-family: var(--text-font);
+    padding: 100px 0;
+
+    &-text {
+      h2 {
+        @extend%h2;
+        font-size: 48px;
+      }
+
+      .txt {
+        @extend%txt;
+        font-family: var(--text-font2);
+      }
+
+      .bttn {
+        @extend%bttn;
+      }
+    }
+
+    &-img {
+      display: flex;
+      gap: 20px;
+
+      img:nth-child(2) {
+        position: relative;
+        top: 80px;
+      }
+    }
+  }
+
+  .hotel {
+    padding: 100px 0;
+    @extend%df;
+    justify-content: space-between;
+
+    &-text {
+      font-family: var(--text-font);
+
+      h2 {
+        @extend%h2;
+      }
+
+      .txt {
+        @extend%txt;
+        font-family: var(--text-font2);
+      }
+
+      .bttn {
+        @extend%bttn;
+      }
+    }
+  }
+
+  .foods {
+    padding: 100px 0;
+    @extend%df;
+    justify-content: space-between;
+
+    &-text {
+      h2 {
+        @extend%h2;
+        font-family: var(--text-font);
+      }
+
+      p {
+        @extend%txt;
+        font-family: var(--text-font2);
+      }
+    }
+  }
+
+  .vitamins {
+    @extend%df;
+    justify-content: space-between;
+
+    h2 {
+      @extend%h2;
+      font-family: var(--text-font);
+    }
+
+    p {
+      @extend%txt;
+      font-family: var(--text-font2);
+    }
+  }
+
+  .rooms {
+    padding: 100px 0;
+    &-text {
+      text-align: center;
+      padding: 100px 0;
+      @extend%df;
+      flex-direction: column;
+
+      &-title {
+        h2 {
+          @extend%h2;
+          font-family: var(--text-font);
+        }
+      }
+
+      &-middle {
+        p {
+          @extend%txt;
+          font-family: var(--text-font2);
+        }
+      }
+      &-button {
+        .bttn {
+          @extend%bttn;
+        }
+      }
+    }
+    &-info {
+      display: flex;
+      justify-content: space-between;
+      &-img1 {
+        &-title {
+          font-family: var(--text-font);
+          .heading1 {
+            color: #000;
+            font-weight: 600;
+            font-size: 24px;
+          }
+        }
+        &-text {
+          .txt1 {
+            @extend %txt;
+            font-family: var(--text-font2);
+          }
+        }
+      }
+      &-img2 {
+        &-title {
+          font-family: var(--text-font);
+
+          .heading2 {
+            color: #000;
+            font-weight: 600;
+            font-size: 24px;
+          }
+        }
+        &-text {
+          .txt2 {
+            @extend %txt;
+            font-family: var(--text-font2);
+          }
+        }
+      }
+      &-img3 {
+        &-title {
+          font-family: var(--text-font);
+
+          .heading3 {
+            color: #000;
+            font-weight: 600;
+            font-size: 24px;
+          }
+        }
+        &-text {
+          .txt3 {
+            @extend %txt;
+            font-family: var(--text-font2);
+          }
+        }
+      }
+    }
+  }
+  .room{
+    padding: 100px 0;
+    @extend%df;
+    justify-content: space-between;
+    &-text{
+      p{
+        color:#424F7B;
+        font-family: var(--text-font2);
+        font-weight: 500;
+        font-size: 16px;
+      }
+      h2{
+        @extend%h2;
+        font-family: var(--text-font);
+      }
+      .txt{
+        @extend%txt;
+        font-family: var(--text-font2);
+      }
+      .text{
+        @extend%df;
+        gap: 24px;
+      .bttn{
+        @extend%bttn;    
+      }
+      .txt1{
+        color: #0E1734;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: var(--text-font2);
+      }
+      }     
+    }
+    &-boxes{
+      ol{
+        li{
+          color: #424F7B;
+          font-family: var(--text-font);
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 36px;
+          .txt{
+            @extend%txt;
+          }
+        }
+        .ellipse1{
+          width: 588px;
+          height: 100px;
+          color: #fff;
+          i{
+            font-size: 36px;
+            background-color:#FF620A;
+            color:#FFECE2;
+            background: none;
+          }
+        }
+        .ellipse2{
+          width: 588px;
+          height: 188px;
+          color: #fff;
+          i{
+            font-size: 36px;
+            background: #fff;
+            color:#FF620A;
+            
+          }
+        }
+        .ellipse3{
+          width: 588px;
+          height: 100px;
+          color: #fff;
+          i{
+            font-size: 36px;
+            background-color:#FF620A;
+            color:#FFECE2;
+            background: none;
+            
+          }
+        }
+        a{
+          display: flex;
+          justify-content: space-between;
+          text-decoration: none;
+          color: #424F7B;
+          font-family: var(--text-font);
+          font-size: 24px;
+          font-weight: 600;
+          text-align: center;
+          line-height: 36px;
+        }
+      }
+    }
+  }
+  .customers{   
+    padding: 100px 0;
+    &-title{
+      @extend%df;
+      justify-content: center;
+      font-family: var(--text-font);
+      h2{
+        @extend%h2;
+      }
+    }
+    &-profile{
+      @extend%df;
+      justify-content: center;
+      margin-top: 70px;
+    }
+    &-text{
+      margin-top: 50px;
+      p{
+        @extend%txt;
+        font-family: var(--text-font2);
+        text-align: center;
+      }
+      .tekst{
+        color: #192252;
+        font-family: var(--text-font2);
+        font-weight: 500;
+        font-size: 20px;
+      }
+    }
+    &-icon{
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+  }
+  .footer{
+    width: 1440px;
+    height: 444px;
+    background-color: #0B265A;
+    @extend%df;
+    justify-content: space-around;
+    &-cootels{
+      .head2{
+        color: #fff;
+        font-family: var(--text-font);
+        font-weight: 700;
+        font-size: 32px;
+      }
+      .tekst1{
+        font-family: var(--text-font2);
+        color: #D9DBDE;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+      }
+      .icons{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+      }
+      &-info{
+        display: flex;
+        gap: 100px;
+        ul{
+          display: flex;
+          flex-direction: column;
+          gap: 22px;
+          .text1{
+            color: #fff;
+            font-family: var(--text-font2);
+            font-size: 16px;
+            font-weight: 700;
+          }
+          li{          
+            list-style: none;
+            color: #D9DBDE;
+            font-family: var(--text-font2);
+            line-height: 20px;
+            font-weight: 400;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
